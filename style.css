@@ -1,251 +1,229 @@
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  header {
-    background-color: white;
-    border-bottom: 1px solid #ddd;
-    padding: 20px 40px;
-    
-  }
-  
-  .navbar {
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed; 
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #fff; 
-    z-index: 1000; 
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .logo {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo img {
-    height: 50px;
-    margin-right: 10px;
-  }
-  
-  .logo span {
-    color: #701a1a;
-    font-weight: bold;
-    font-size: 24px;
-  }
-  
-  .navbar ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    gap: 50px;
-  }
-  
-  .navbar li a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    position: relative;
-    padding-bottom: 5px;
-  }
-  
-  .navbar li.active a::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 2px;
-    width: 100%;
-    background-color: #701a1a;
-  }
-  
-  .reserve-btn {
-    background-color: #4c0000;
-    color: white;
-    text-decoration: none;
-    padding: 10px 10px;
-    border-radius: 6px;
-    font-weight: bold;
-  }
-
-  
-  /* .hero-content h1 {
-    font-size: 48px;
-    font-weight: 900;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-  }
-   */
-  /* .hero-btn {
-    display: inline-block;
-    background-color: #4c0000;
-    color: white;
-    padding: 14px 26px;
-    font-weight: bold;
-    font-size: 16px;
-    border-radius: 6px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-  }
-  
-  .hero-btn:hover {
-    background-color: #6b0000;
-  }
-
-
-
-  @media (max-width: 768px) {
-    .hero-breakfast {
-      padding: 40px 20px;
-      text-align: center;
-      justify-content: center;
-    }
-  
-    .hero-content h1 {
-      font-size: 32px;
-    }
-  .hero-btn {
-      padding: 12px 20px;
-      font-size: 14px;
-    }
-  } */ */
-
-  .home-herosection{
-    text-align: center;
-    background-image: url('https://prontorestaurant.co.ke/wp-content/uploads/2024/11/IMG_4911-1-scaled-1.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh; 
-    padding-top: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-  }
-
-  .contact-herosection{
-    text-align: center;
-    background-image: url("https://prontorestaurant.co.ke/wp-content/uploads/2024/11/Grilled-Norwegian-Salmon-2-scaled-1.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 100vh; 
-    padding-top: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  .locations {
-    padding: 60px 40px;
-    text-align: center;
-    background-color: #fafafa;
-  }
-  
-  .locations h2 {
-    font-size: 36px;
-    margin-bottom: 30px;
-    color: #0c2c21;
-  }
-  
-  .location-cards {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-bottom: 50px;
-  }
-  
-  .location {
-    max-width: 220px;
-    text-align: left;
-  }
-  
-  .location p {
-    font-size: 16px;
-    color: #2f3e46;
-    margin-bottom: 8px;
-  }
-  
-  .location a {
-    font-weight: bold;
-    color: #2f3e46;
-    text-decoration: none;
-  }
-  
-  .rate-us h2 {
-    font-size: 32px;
-    color: #0c2c21;
-    margin-bottom: 20px;
-  }
-  
-  .rating-icons {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-  }
-  
-  .rating-icons img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-  }
-  
-/* 
-  About section styling */
-h1{
-  text-align: center;
-  
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.menu-herosection{
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  padding: 20px 40px;
+}
+
+/* navbar styling */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1000;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 5px;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+.navbar li.active a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #701a1a;
+}
+
+.reserve-btn {
+  background-color: #4c0000;
+  color: white;
+  text-decoration: none;
+  padding: 10px 10px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+/* navbar styling end */ /* future- to add the hover effect on the lists  */
+
+.order-button {
+  background-color: #4c0000;
+  color: white;
+  padding: 10px 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.order-button:hover {
+  background-color: #5c1414; /* Darker maroon on hover */
+}
+
+.reserve-btn {
+  background-color: #4c0000;
+  color: white;
+  text-decoration: none;
+  padding: 10px 10px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.home{
   text-align: center;
-  background-image: url('https://prontorestaurant.co.ke/wp-content/uploads/2024/11/IMG_4911-1-scaled-1.jpg');
+  background-image: url("https://prontorestaurant.co.ke/wp-content/uploads/2024/11/Arosto-with-Pilau-scaled-1-1024x683.jpg");
   background-size: cover;
   background-position: center;
-  height: 100vh; 
+  height: 100vh;
   padding-top: 80px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  }
+
+.home-herosection h2 {
+  text-align: center;
+  padding-top: 150px;
+  margin: 20px;
+  width: auto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 55px;
+}
+
+.order-button {
+  text-align: center;
+  width: auto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 22px;
+}
+
+/* home location styling */
+.locations {
+  padding: 60px 40px;
+  text-align: center;
+  background-color: #fafafa;
+}
+
+.locations h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #0c2c21;
+}
+
+.location-container {
   display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.location {
+  max-width: 220px;
+  text-align: left;
+}
+
+.location p {
+  font-size: 16px;
+  color: #2f3e46;
+  margin-bottom: 8px;
+}
+
+.location a {
+  font-weight: bold;
+  color: #2f3e46;
+  text-decoration: none;
+}
+
+.rate-us h2 {
+  font-size: 32px;
+  color: #0c2c21;
+  margin-bottom: 20px;
+}
+
+.rating-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.rating-icons img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+
+/* Menu page styling */
+.menu-herosection {
+  text-align: center;
+  background-image: url("https://prontorestaurant.co.ke/wp-content/uploads/2024/11/IMG_4911-1-scaled-1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding-top: 80px;
+  display: block;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: white;
 }
 
-
-
-/* Menu page styling */
+.menu-herosection p {
+  text-align: center;
+  padding-top: 150px;
+  margin: 20px;
+  width: auto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 24px;
+}
+.menu-herosection h2 {
+  text-align: center;
+  width: auto;
+  font-family: Sen, sans-serif;
+  font-size: 55px;
+}
 
 .container {
   display: flex;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
   margin-top: 50px;
@@ -254,14 +232,14 @@ h1{
 
 .item {
   text-align: center;
-  max-width: 300px;
-  flex: 1 1 300px;
+  max-width: 350px;
+  flex: 1 1 350px;
 }
 
 .item img {
   width: 100%;
   border-radius: 10px;
-  height:300px;
+  height: 300px;
   border: none;
   border-radius: 0;
   box-shadow: none;
@@ -269,38 +247,121 @@ h1{
   max-width: 100%;
 }
 
-h3 {
+.item h2 {
   margin-top: 10px;
-  font-size: 1.2rem;
+  font-size: 22px;
   color: #333;
   font-weight: bold;
 }
 
-.button{
+.button {
   background-color: #550000;
-  color:#FFFFFF;
+  color: #ffffff;
   padding: 12px 24px;
   border: none;
   cursor: pointer;
   margin-top: 10px;
-  display:inline-block;
+  display: inline-block;
   border-radius: 3px;
-  font-size:15px;
-  margin:15px;
-
-} 
-
-.button:hover {
-  background-color: #A52A2A; 
+  font-size: 15px;
+  margin: 15px;
 }
 
+.button:hover {
+  background-color: #a52a2a;
+}
 
+/* About section styling */
+.about-herosection {
+  text-align: center;
+  background-image: url("https://prontorestaurant.co.ke/wp-content/uploads/2024/11/Hand-Crafted-Boosters-scaled-1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
 
+.about-herosection h2 {
+  font-family: sans-serif;
+  font-size: 55px;
+}
 
+.about {
+  padding: 50px 30px;
+  text-align: center;
+  background-color: #fafafa;
+  line-height: 35px;
+}
 
+/* Styling contact page */
 
-/* footer styling */
+.contact-herosection {
+  text-align: center;
+  background-image: url("https://prontorestaurant.co.ke/wp-content/uploads/2024/11/Grilled-Norwegian-Salmon-2-scaled-1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+.contact-herosection > h2 {
+  font-family: "Sen", sans-serif;
+  font-size: 40px;
+}
 
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 50px;
+}
+
+.contact-item > img {
+  display: block;
+  height: 3rem;
+  width: auto;
+  position: relative;
+  color: #333;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.contact-item {
+  padding: 50px;
+  margin: 50px;
+  width: 50%;
+  height: 250px;
+  background-color: #ecf0ec;
+}
+
+.contact-item:hover {
+  background-color: #550000;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.contact-item h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.contact-item p {
+  color: #777;
+  font-size: 1rem;
+}
+
+/* styling footer section */
 .about-footer {
   background-color: #4c0000;
   color: #fff5e0;
@@ -317,14 +378,8 @@ h3 {
 }
 
 .footer-logo img {
-  width: 60px;
-  height: 60px;
-}
-
-.footer-logo h1 {
-  font-size: 36px;
-  font-weight: 800;
-  color: #ffffff;
+  width: 20%;
+  height: auto;
 }
 
 .footer-desc {
@@ -351,144 +406,88 @@ h3 {
 .footer-navbar a:hover {
   color: #ffcfcf;
 }
-
-/* Responsive */
-@media (max-width: 600px) {
-  .footer-logo h1 {
-    font-size: 28px;
-  }
-
-  .footer-desc {
-    font-size: 16px;
-  }
-
-  .footer-navbar {
-    flex-direction: column;
-    gap: 16px;
-  }
+.footer-contact {
+  background-color: #4c0000;
+  color: #f5f5f5;
+  padding: 50px 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* contact footer section */
-.footer-contact {
-    background-color: #4c0000;
-    color: #f5f5f5;
-    padding: 50px 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-  }
-  
-  .footer-contact-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-    gap: 40px;
-  }
-  
-  .footer-box {
-    flex: 1 1 250px;
-    min-width: 250px;
-  }
-  
-  .footer-box h3 {
-    font-size: 22px;
-    font-weight: 700;
-    margin-bottom: 10px;
-    color: #fff6e5;
-  }
-  
-  .footer-box p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #dcdcdc;
-  }
-  
-  .footer-box a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .footer-box a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Reservation Button */
-  .reserve-link {
-    display: inline-block;
-    background-color: #000;
-    color: white;
-    padding: 12px 24px;
-    margin-top: 10px;
-    border-radius: 30px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-  }
-  
-  .reserve-link:hover {
-    background-color: #333;
-  }
-  
-  
-  @media (max-width: 768px) {
-    .footer-contact-container {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-  
-    .footer-box {
-      margin-bottom: 30px;
-    }
-  }
-  
-  /* footer bottom bar section */
-.footer-bottom {
-    background-color: #4c0000;
-    color: #f5f5f5;
-    padding: 20px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    flex-wrap: wrap;
-  }
-  
-  .footer-bottom p {
-    margin: 0;
-    font-size: 16px;
-  }
-  
-  .footer-links-bottom a {
-    margin-left: 20px;
-    text-decoration: none;
-    color: #fff;
-    font-size: 16px;
-    transition: color 0.3s ease;
-  }
-  
-  .footer-links-bottom a:hover {
-    color: #dcdcdc;
-  }
-  
-  @media (max-width: 600px) {
-    .footer-bottom {
-      flex-direction: column;
-      text-align: center;
-      gap: 10px;
-    }
-  
-    .footer-links-bottom {
-      display: flex;
-      gap: 20px;
-    }
-  }
+.footer-contact-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
 
- /* About section styling */
-  .about {
-    padding: 60px 40px;
-    text-align: center;
-    background-color: #fafafa;
-    line-height: 35px;
-  }
-  
-  
+.footer-box {
+  flex: 1 1 250px;
+  min-width: 250px;
+}
+
+.footer-box h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #fff6e5;
+}
+
+.footer-box p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #dcdcdc;
+}
+
+.footer-box a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-box a:hover {
+  text-decoration: underline;
+}
+
+.reserve-link {
+  display: inline-block;
+  background-color: #000;
+  color: white;
+  padding: 12px 24px;
+  margin-top: 10px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.reserve-link:hover {
+  background-color: #333;
+}
+
+.footer-bottom {
+  background-color: #4c0000;
+  color: #f5f5f5;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  flex-wrap: wrap;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.footer-links-bottom a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.footer-links-bottom a:hover {
+  color: #dcdcdc;
+}
